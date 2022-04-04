@@ -53,23 +53,21 @@ class AFHttp {
         return parameters
     }
     
-    class func paramsPostCreate(post: Post) -> Parameters{
+    class func paramsPostCreate(post: decodableData) -> Parameters{
         let parameters: Parameters = [
-            "name": post.name!,
-            "salary": post.salary!,
-            "age": post.age!,
-            "userId": post.userId!,
+            "name": post.employeeName!,
+            "salary": post.employeeSalary!,
+            "age": post.employeeAge!,
         ]
         return parameters
     }
     
-    class func paramsPostUpdate(post: Post) -> Parameters{
+    class func paramsPostUpdate(post: decodableData) -> Parameters{
         let parameters: Parameters = [
             "id": post.id!,
-            "name": post.name!,
-            "salary": post.salary!,
-            "age": post.age!,
-            "userId": post.userId!,
+            "name": post.employeeName!,
+            "salary": post.employeeSalary!,
+            "age": post.employeeAge!,
         ]
         return parameters
     }

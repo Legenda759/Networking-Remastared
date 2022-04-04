@@ -16,6 +16,12 @@
 		982622C527EC24A500093FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982622C327EC24A500093FB9 /* LaunchScreen.storyboard */; };
 		982622CE27EC287900093FB9 /* AFHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982622CD27EC287900093FB9 /* AFHttp.swift */; };
 		982622D127EC289C00093FB9 /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982622D027EC289C00093FB9 /* models.swift */; };
+		982622D427ED88DA00093FB9 /* methodsAFHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982622D327ED88DA00093FB9 /* methodsAFHttp.swift */; };
+		982622D727EDC56300093FB9 /* DummyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982622D627EDC56300093FB9 /* DummyTableViewController.swift */; };
+		982622D927EDDD0600093FB9 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982622D827EDDD0600093FB9 /* DBManager.swift */; };
+		9883BB3627EF27D900995476 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9883BB3527EF27D900995476 /* BaseView.swift */; };
+		9883BB3827EF280A00995476 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9883BB3727EF280A00995476 /* PostView.swift */; };
+		9883BB3B27EF306000995476 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9883BB3A27EF306000995476 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		982622C627EC24A500093FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		982622CD27EC287900093FB9 /* AFHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHttp.swift; sourceTree = "<group>"; };
 		982622D027EC289C00093FB9 /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
+		982622D327ED88DA00093FB9 /* methodsAFHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = methodsAFHttp.swift; sourceTree = "<group>"; };
+		982622D627EDC56300093FB9 /* DummyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTableViewController.swift; sourceTree = "<group>"; };
+		982622D827EDDD0600093FB9 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		9883BB3527EF27D900995476 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		9883BB3727EF280A00995476 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		9883BB3A27EF306000995476 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		AE7662B6280725F97D2BB49D /* Pods-Networking Remastared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking Remastared.release.xcconfig"; path = "Target Support Files/Pods-Networking Remastared/Pods-Networking Remastared.release.xcconfig"; sourceTree = "<group>"; };
 		FBF39F0D3ACE0FFFB5F6252B /* Pods-Networking Remastared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking Remastared.debug.xcconfig"; path = "Target Support Files/Pods-Networking Remastared/Pods-Networking Remastared.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +87,10 @@
 		982622B727EC24A000093FB9 /* Networking Remastared */ = {
 			isa = PBXGroup;
 			children = (
+				9883BB3927EF303F00995476 /* cells */,
+				9883BB3427EF27C200995476 /* views */,
+				982622D527EDC30E00093FB9 /* controllers */,
+				982622D227ED88A000093FB9 /* AFHttp Methods */,
 				982622CF27EC288F00093FB9 /* models */,
 				982622CC27EC285600093FB9 /* Networking */,
 				982622B827EC24A000093FB9 /* AppDelegate.swift */,
@@ -84,6 +100,7 @@
 				982622C127EC24A500093FB9 /* Assets.xcassets */,
 				982622C327EC24A500093FB9 /* LaunchScreen.storyboard */,
 				982622C627EC24A500093FB9 /* Info.plist */,
+				982622D827EDDD0600093FB9 /* DBManager.swift */,
 			);
 			path = "Networking Remastared";
 			sourceTree = "<group>";
@@ -104,13 +121,45 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		982622D227ED88A000093FB9 /* AFHttp Methods */ = {
+			isa = PBXGroup;
+			children = (
+				982622D327ED88DA00093FB9 /* methodsAFHttp.swift */,
+			);
+			path = "AFHttp Methods";
+			sourceTree = "<group>";
+		};
+		982622D527EDC30E00093FB9 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				982622D627EDC56300093FB9 /* DummyTableViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		9883BB3427EF27C200995476 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9883BB3527EF27D900995476 /* BaseView.swift */,
+				9883BB3727EF280A00995476 /* PostView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		9883BB3927EF303F00995476 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				9883BB3A27EF306000995476 /* PostTableViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		E388D3701481C50C1F5E4BE4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				FBF39F0D3ACE0FFFB5F6252B /* Pods-Networking Remastared.debug.xcconfig */,
 				AE7662B6280725F97D2BB49D /* Pods-Networking Remastared.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -229,11 +278,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9883BB3B27EF306000995476 /* PostTableViewCell.swift in Sources */,
 				982622D127EC289C00093FB9 /* models.swift in Sources */,
 				982622BD27EC24A100093FB9 /* ViewController.swift in Sources */,
 				982622B927EC24A100093FB9 /* AppDelegate.swift in Sources */,
+				982622D927EDDD0600093FB9 /* DBManager.swift in Sources */,
 				982622CE27EC287900093FB9 /* AFHttp.swift in Sources */,
 				982622BB27EC24A100093FB9 /* SceneDelegate.swift in Sources */,
+				9883BB3627EF27D900995476 /* BaseView.swift in Sources */,
+				982622D427ED88DA00093FB9 /* methodsAFHttp.swift in Sources */,
+				9883BB3827EF280A00995476 /* PostView.swift in Sources */,
+				982622D727EDC56300093FB9 /* DummyTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

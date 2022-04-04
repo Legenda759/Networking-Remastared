@@ -7,24 +7,32 @@
 
 import Foundation
 
-struct Post: Decodable{
+// MARK: - Welcome
+struct Post: Codable {
+    let status: String?
+    let data: [decodableData]
+    let message: String?
     
-    var name: String?
-    var salary: String?
-    var age: String?
-    var userId: Int?
-    var id: Int?
-    
-    init() {
-        
+    enum CodingKeys: String, CodingKey {
+        case status = "status"
+        case data = "data"
+        case message = "message"
     }
-    
-    init(name: String, salary: String, age: String){
-        self.userId = 1
-        self.id = 1
-        self.name = name
-        self.salary = salary
-        self.age = age
-    }
-    
 }
+
+// MARK: - Datum
+struct decodableData: Codable {
+    let id: Int?
+    let employeeName: String?
+    let employeeSalary, employeeAge: Int?
+    let profileImage: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case employeeName = "employee_name"
+        case employeeSalary = "employee_salary"
+        case employeeAge = "employee_age"
+        case profileImage = "profile_image"
+    }
+}
+
